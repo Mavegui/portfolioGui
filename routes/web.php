@@ -11,7 +11,6 @@ Route::get('/', [SiteController::class, 'index'])->name('site.index');
 
 /* Rota contato */
 Route::get('/contato', [ContatoController::class, 'contato'])->name('mail.contato');
-Route::post('/contato', [ContatoController::class, 'store'])->name('mail.store');
 
 /* Rota portofólio */
 Route::get('/portfolio', [PortfolioController::class, 'portfolio'])->name('site.portfolio');

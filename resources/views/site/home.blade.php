@@ -43,7 +43,8 @@
           <div class="w-full my-5 px-6 ">
             <h5 class="block mb-2 font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-white">Sobre mim</h5>
             <div class="p-6 text-center">
-              <p class="mb-3 font-normal text-gray-200 ">Jovem fascinado pela tecnologia! Em busca de oportunidades, tenho diploma técnico em informática e atualmente cursando engenharia de Software. Full stack, PHP, LINUX</p> 
+              <p class="mb-3 font-normal text-gray-200 ">Jovem em busca de recolocação profissional como desenvolvedor Back-end. Tenho como principais conhecimentos PHP, Laravel e banco de dados MySQL. Atualmente, estou cursando Engenharia de Software, buscando sempre aprimorar meus conhecimentos na área e habilidades.
+                Como usuário Linux, amo a flexibilidade e a segurança que esse sistema operacional oferece, contribuindo para minha formação como programador experiente. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente. </p> 
             </div>
           </div>
         </div>
