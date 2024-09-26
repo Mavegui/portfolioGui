@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico')}}"/>
     <!-- CDN Tailwind/Flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
    
 </head>
@@ -26,10 +26,17 @@
             </a>
             
             <!-- MENU Mobile -->
-            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-700 focus:outline-none text-white" aria-controls="navbar-dropdown" aria-expanded="false">
+            <button id="hamburger" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-700 focus:outline-none text-white">
+               
+                <!-- Ícone de menu (hamburger) -->
                 <span class="sr-only">Abrir menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <svg id="hamburger-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+                <!-- Ícone de fechar (X) -->
+                <span class="sr-only">Fechar menu</span>
+                <svg id="close-icon" class="toggle hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
             
@@ -69,8 +76,8 @@
                 </ul>
             </div>
         </div>
-    </nav>      
-    
+    </nav>        
+
     <!-- Conteúdo -->
     <div class="bg-gray-900 flex flex-col min-h-screen">
         <div class="flex-grow">  
@@ -135,7 +142,19 @@
 </div>
 
     <!--Flowbite script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    
+    <script>
+        // Lógica de alternância do menu e ícones no mobile
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const menu = document.getElementById('navbar-dropdown');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+            menu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
 
 </body> 
 </html>
