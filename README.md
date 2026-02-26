@@ -33,7 +33,7 @@ Este projeto foi criado utilizando:
 
 ## Link do Site
 
-Você pode acessar meu portfólio online em: [www.porfoliogui.com.br](https://www.porfoliogui.com.br/).
+Você pode acessar meu portfólio online em: Não renovei a hospedagem, foi de cucuias. 
 
 ## Contribuindo
 
